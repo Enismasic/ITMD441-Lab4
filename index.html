@@ -9,20 +9,23 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <h1>Sunrise and Sunset API</h1>
-    <form id="form">
-        <label for="location">Enter a Location:</label><br>
-        <input type="text" id="location" name="location"><br>
-        <input type="submit" value="Submit">
-    </form>
-    <h3>Select a Location: </h3>
-    <ul>
-        <li>New York</li>
-        <li>Chicago</li>
-        <li>Los Angeles</li>
-        <li>Dallas</li>
-        <li>Boston</li>
-    </ul>
+    <h1 id="header">Sunrise and Sunset API</h1>
+
+    <form id="current-location">
+        <p>Press Button for Current Location</p>
+            <input type="button" onclick="window.location.href='https://www.w3docs.com';" value="Find My Location" />
+        </form>
+
+    <div id="location-dropdown">
+        <h3>Select a Location: </h3>
+        <ul>
+            <li>New York</li>
+            <li>Chicago</li>
+            <li>Los Angeles</li>
+            <li>Dallas</li>
+            <li>Boston</li>
+        </ul>
+    </div>
     
 </body>
 </html>
