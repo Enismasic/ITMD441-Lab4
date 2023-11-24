@@ -4,28 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunrise and Sunset Api</title>
+    <title>Sunrise and Sunset API</title>
     <link rel='stylesheet' href='./style.css'>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <h1 id="header">Sunrise and Sunset API</h1>
 
     <form id="current-location">
         <p>Press Button for Current Location</p>
-            <input type="button" onclick="window.location.href='https://www.w3docs.com';" value="Find My Location" />
-        </form>
+        <input type="button" onclick="getLocation()" value="Find My Location" />
+    </form>
 
     <div id="location-dropdown">
         <h3>Select a Location: </h3>
         <ul>
-            <li>New York</li>
-            <li>Chicago</li>
-            <li>Los Angeles</li>
-            <li>Dallas</li>
-            <li>Boston</li>
+            <li onclick="redirectToResults(40.71427, -74.00597)">New York</li>
+            <li onclick="redirectToResults(41.8781, -87.6298)">Chicago</li>
+            <li onclick="redirectToResults(29.7604, -95.3698)">Houston</li>
+            <li onclick="redirectToResults(34.0522, -118.2437)">Los Angeles</li>
+            <li onclick="redirectToResults(42.3601, -71.0589)">Boston</li>            
+            
         </ul>
     </div>
-    
+
+    <div id="result-container">
+        <p id="sunrise"></p>
+        <p id="sunset"></p>
+        <p id="raw-output"></p>
+    </div>
+
 </body>
 </html>

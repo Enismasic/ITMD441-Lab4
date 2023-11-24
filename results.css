@@ -1,0 +1,32 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(90deg, #030202 0%, #91221e 74%);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+
+#raw-output{
+    padding: 1em;
+    display: block;
+    background: #A9393C;
+    border-radius: 1em;
+    max-width: 300px;
+    margin: 1em auto;
+  }
+
+#sunrise-container,
+#sunset-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#sunrise-image,
+#sunset-image {
+    width: 50px; 
+    height: auto; 
+}
